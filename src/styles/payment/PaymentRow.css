@@ -1,0 +1,43 @@
+.payment-row-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 352px;
+  height: 36px;
+}
+
+.payment-row-title {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  width: 128px;
+  flex-shrink: 0;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  background-color: var(--Gray-Scale-Cool-Gray-150);
+  padding: 0 8px;
+}
+
+.payment-row-children {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: #6b7280;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 100%;
+  flex: 1;
+  min-width: 0;
+  align-items: center;
+  display: flex;
+  padding: 0 8px;
+}
+
+.payment-row-date-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}

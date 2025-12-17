@@ -1,0 +1,19 @@
+.payment-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--Gray-Scale-Cool-Gray-150);
+  border-bottom: 1px solid var(--Gray-Scale-Cool-Gray-200);
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.payment-header-title {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  width: 100%;
+  color: var(--Gray-Scale-Cool-Gray-700);
+}

@@ -1,0 +1,25 @@
+[class^="badge--"] {
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding: 2px 6px 3px;
+  border-radius: 10px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge--Paid {
+  color: var(--Brand-Color-Monolis-Blue-Blue);
+  background-color: var(--Brand-Color-Monolis-Blue-100);
+}
+
+.badge--NOT_YET {
+  color: var(--Gray-Scale-Cool-Gray-700);
+  background-color: var(--Gray-Scale-Cool-Gray-150);
+}
+
+.badge--Pending {
+  color: var(--Gray-Scale-Cool-Gray-700);
+  background-color: var(--Gray-Scale-Cool-Gray-150);
+}

@@ -1,0 +1,35 @@
+.attachment-file-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.attachment-file-item {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: #6b7280;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  background-color: var(--Gray-Scale-Cool-Gray-150);
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  &:hover {
+    background-color: var(--Gray-Scale-Cool-Gray-200);
+  }
+  &:active {
+    background-color: var(--Gray-Scale-Cool-Gray-300);
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px var(--Gray-Scale-Cool-Gray-200);
+  }
+}

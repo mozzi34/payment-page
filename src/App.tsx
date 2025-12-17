@@ -1,10 +1,17 @@
-import React from 'react';
+import { Button } from 'components/ui/Button';
+import { PayableSection } from 'components/payment/PayableSection';
+import { mockData } from 'data/mock';
+import type { payments } from 'data/type';
 
 function App() {
+  const { payments } = mockData;
+
   return (
-    <div>
+    <main>
       <h1>메인 페이지</h1>
-    </div>
+      <Button>버튼</Button>
+      <PayableSection payments={payments as payments[]} />
+    </main>
   );
 }
 

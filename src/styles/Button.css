@@ -1,0 +1,115 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 1px var(--ring, rgba(0, 0, 0, 0.1));
+}
+
+.button:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.button svg {
+  pointer-events: none;
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+.button--variant-default {
+  background-color: #3e63dd;
+  color: white;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+.button--variant-default:hover {
+  background-color: rgba(62, 99, 221, 0.9);
+}
+
+.button--variant-destructive {
+  background-color: var(--destructive, #ef4444);
+  color: var(--destructive-foreground, white);
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+.button--variant-destructive:hover {
+  background-color: color-mix(in srgb, var(--destructive, #ef4444) 90%, transparent);
+}
+
+.button--variant-outline {
+  border: 1px solid var(--input, #e5e7eb);
+  background-color: var(--background, white);
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+.button--variant-outline:hover {
+  background-color: var(--accent, #f3f4f6);
+  color: var(--accent-foreground, #111827);
+}
+
+.button--variant-secondary {
+  background-color: var(--secondary, #f3f4f6);
+  color: var(--secondary-foreground, #111827);
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+.button--variant-secondary:hover {
+  background-color: color-mix(in srgb, var(--secondary, #f3f4f6) 80%, transparent);
+}
+
+.button--variant-ghost:hover {
+  background-color: var(--accent, #f3f4f6);
+  color: var(--accent-foreground, #111827);
+}
+
+.button--variant-link {
+  color: var(--primary, #3e63dd);
+  text-underline-offset: 4px;
+}
+
+.button--variant-link:hover {
+  text-decoration: underline;
+}
+
+.button--size-default {
+  height: 2.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.button--size-sm {
+  height: 2rem;
+  border-radius: 0.375rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.button--size-lg {
+  height: 2.5rem;
+  border-radius: 0.375rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.button--size-icon {
+  height: 2.25rem;
+  width: 2.25rem;
+}
