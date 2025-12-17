@@ -35,3 +35,4 @@ export function sumCells(
     );
   }, 0);
 }
+

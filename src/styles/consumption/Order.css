@@ -25,6 +25,11 @@
   border-right: 1px solid var(--Gray-Scale-Cool-Gray-200, #e3e9ef);
 }
 
+.ordered-table-select-row {
+  background-color: white;
+  border-top: 1px solid var(--Gray-Scale-Cool-Gray-200, #e3e9ef);
+}
+
 .ordered-table-body {
   display: flex;
   flex-direction: column;

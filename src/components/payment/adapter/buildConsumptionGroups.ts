@@ -79,8 +79,26 @@ export function adaptPaymentToConsumptionGroups(data: Payment): PaymentBundle[] 
   });
 }
 
-export function adaptPaymentToUnifiedTable(data: Payment): UnifiedTableData {
+export function adaptPaymentToUnifiedTable(
+  data: Payment,
+  selectedStyleNumber: string | null,
+  selectedFabricName: string | null,
+  selectedColorName: string | null
+): UnifiedTableData {
   const { payments, consumptions, paymentBreakdowns } = data;
+
+  const filteredConsumptions = consumptions.filter(consumption => {
+    if (selectedStyleNumber && consumption.salesOrder.styleNumber !== selectedStyleNumber) {
+      return false;
+    }
+    if (selectedFabricName && consumption.fabricName !== selectedFabricName) {
+      return false;
+    }
+    if (selectedColorName && consumption.colorName !== selectedColorName) {
+      return false;
+    }
+    return true;
+  });
 
   const breakdownMap = new Map<string, PaymentBreakdown>();
 
@@ -90,7 +108,7 @@ export function adaptPaymentToUnifiedTable(data: Payment): UnifiedTableData {
 
   const groupMap = new Map<number, Consumption[]>();
 
-  consumptions.forEach(consumption => {
+  filteredConsumptions.forEach(consumption => {
     const salesOrderId = consumption.salesOrder.id;
 
     if (!groupMap.has(salesOrderId)) {

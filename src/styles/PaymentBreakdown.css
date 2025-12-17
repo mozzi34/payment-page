@@ -18,7 +18,7 @@
 }
 
 .payment-breakdown-table-header-item {
-  flex: 0 0 120px !important;
+  flex: 0 0 120px;
 }
 
 .payment-breakdown-table-body {
@@ -36,7 +36,7 @@
 }
 
 .payment-breakdown-table-body-item-item {
-  flex: 0 0 120px !important;
+  flex: 0 0 120px;
 }
 
 .payment-breakdown-table-body-subtotal {
@@ -50,17 +50,17 @@
 }
 
 .payment-breakdown-table-footer-spacer {
-  flex: 0 0 120px !important;
+  flex: 0 0 120px;
 }
 
 .payment-breakdown-table-footer-label {
-  flex: 0 0 120px !important;
+  flex: 0 0 120px;
   font-weight: 700;
   text-align: left;
 }
 
 .payment-breakdown-table-footer-value {
-  flex: 0 0 120px !important;
+  flex: 0 0 120px;
   font-weight: 700;
   text-align: right;
   justify-content: flex-end;

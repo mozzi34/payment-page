@@ -54,7 +54,7 @@ export const mockData: Payment = {
       garmentSize: { id: 3, name: 'M', orderNum: 4 },
       salesOrder: {
         id: 125,
-        styleNumber: 'AIN26',
+        styleNumber: 'AIN25',
         styleCode: '010',
         createUser: {
           id: 3,
@@ -81,7 +81,7 @@ export const mockData: Payment = {
       garmentSize: { id: 4, name: 'L', orderNum: 5 },
       salesOrder: {
         id: 125,
-        styleNumber: 'AIN26',
+        styleNumber: 'AIN24',
         styleCode: '010',
         createUser: {
           id: 3,
@@ -108,7 +108,7 @@ export const mockData: Payment = {
       garmentSize: { id: 2, name: 'S', orderNum: 3 },
       salesOrder: {
         id: 126,
-        styleNumber: 'AIN26',
+        styleNumber: 'AIN23',
         styleCode: '010',
         createUser: {
           id: 3,
@@ -123,7 +123,7 @@ export const mockData: Payment = {
       unitPrice: 3,
       orderQuantity: 1000,
       orderAmount: 3000,
-      fabricName: 'Cotton',
+      fabricName: 'Febric',
       fabricClass: 'Solid',
       fabricDetail: 'Description',
       supplierItemCode: 'Supplier-0351',
@@ -150,7 +150,7 @@ export const mockData: Payment = {
       unitPrice: 1,
       orderQuantity: 100,
       orderAmount: 100,
-      fabricName: 'Cotton',
+      fabricName: 'Febric',
       fabricClass: 'Solid',
       fabricDetail: 'Description',
       supplierItemCode: 'Supplier-0351',

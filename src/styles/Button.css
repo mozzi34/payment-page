@@ -8,9 +8,17 @@
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 500;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-property:
+    color, background-color, border-color, text-decoration-color, fill, stroke, transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+  cursor: pointer;
+  transform: scale(1);
+}
+
+.button:active {
+  transform: scale(0.95);
+  transition-duration: 100ms;
 }
 
 .button:focus-visible {
