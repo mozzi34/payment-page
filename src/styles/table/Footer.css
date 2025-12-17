@@ -1,0 +1,47 @@
+.table-body-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 40px;
+  width: 100%;
+  border-bottom: 1px solid var(--Gray-Scale-Cool-Gray-200, #e3e9ef);
+}
+
+.table-grandtotal-row {
+  background-color: var(--Gray-Scale-Cool-Gray-150);
+  font-weight: 700;
+  border-top: 2px solid var(--Gray-Scale-Cool-Gray-300, #d1d5db);
+}
+
+.table-ordered-columns {
+  display: flex;
+  flex-direction: row;
+  min-width: 1152px;
+  flex-shrink: 0;
+  border-bottom: 1px solid var(--Gray-Scale-Cool-Gray-200, #e3e9ef);
+}
+
+.table-footer-label {
+  flex: 0 0 160px;
+  font-weight: 700;
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.table-payment-columns {
+  display: flex;
+  flex-direction: row;
+  min-width: 432px;
+}
+
+.table-total-columns {
+  display: flex;
+  flex-direction: row;
+  min-width: 288px;
+  border-left: 1px solid var(--Gray-Scale-Cool-Gray-200, #e3e9ef);
+  border-bottom: 1px solid var(--Gray-Scale-Cool-Gray-200, #e3e9ef);
+}
+
+.text-right {
+  justify-content: flex-end;
+}

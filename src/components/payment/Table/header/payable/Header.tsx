@@ -1,4 +1,4 @@
-import 'styles/payment/PaymentHeader.css';
+import 'styles/table/payment/PaymentHeader.css';
 
 export function Header() {
   return (

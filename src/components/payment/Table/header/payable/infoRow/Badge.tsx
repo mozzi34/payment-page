@@ -1,4 +1,4 @@
-import 'styles/payment/Badge.css';
+import 'styles/table/payment/Badge.css';
 import type { paymentStatus } from 'data/type';
 
 export function Badge({ status }: { status: paymentStatus }) {

@@ -2,8 +2,10 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 352px;
+  width: 360px;
   height: 36px;
+  background-color: var(--Gray-Scale-Achromatic-White);
+  border: 1px solid var(--Gray-Scale-Cool-Gray-100);
 }
 
 .payment-row-title {

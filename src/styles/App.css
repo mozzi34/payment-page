@@ -4,3 +4,20 @@
   width: 100%;
   height: 100%;
 }
+
+.table-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+}
+
+.table-body {
+  width: 100%;
+  min-width: max-content;
+  border-collapse: collapse;
+  border-spacing: 0;
+  flex: 1 1 0%;
+  flex-direction: column;
+  display: flex;
+}

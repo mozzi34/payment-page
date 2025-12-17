@@ -1,0 +1,29 @@
+.table-header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: var(--Gray-Scale-Cool-Gray-150);
+  width: fit-content;
+  border-bottom: 1px solid var(--Gray-Scale-Cool-Gray-200);
+}
+
+.table-ordered-section {
+  display: flex;
+  flex-direction: column;
+  min-width: 1152px;
+}
+
+.table-section-header {
+  padding: 16px;
+  font-weight: 700;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  min-width: 120px;
+}
+
+.table-total-section {
+  display: flex;
+  flex-direction: column;
+  min-width: 424px;
+}

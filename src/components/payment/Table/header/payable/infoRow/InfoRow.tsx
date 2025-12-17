@@ -1,4 +1,4 @@
-import 'styles/payment/PaymentRow.css';
+import 'styles/table/payment/PaymentRow.css';
 
 type InfoRowProps = {
   label: string;
@@ -9,8 +9,8 @@ export function InfoRow({ label, children }: InfoRowProps) {
   return (
     <div>
       <div className="payment-row-container">
-        <label className="payment-row-title">{label}</label>
-        <div className='payment-row-children'>{children}</div>
+        <div className="payment-row-title">{label}</div>
+        <div className="payment-row-children">{children}</div>
       </div>
     </div>
   );

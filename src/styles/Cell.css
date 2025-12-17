@@ -13,4 +13,13 @@
   justify-content: flex-start;
   min-height: 40px;
   text-align: start;
+  border: 1px solid var(--Gray-Scale-Cool-Gray-200, #e3e9ef);
+}
+
+.dollar-cell {
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  justify-content: space-between;
+  max-width: 124px;
 }

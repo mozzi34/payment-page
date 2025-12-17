@@ -1,11 +1,10 @@
+import type { payments } from 'data/type';
 import { formatDate } from 'utils/date';
 import { Header } from './Header';
 import { AttachmentFile } from './infoRow/AttachmentFile';
-import { InfoRow } from './infoRow/InfoRow';
-import 'styles/payment/PayableSection.css';
-
-import type { payments } from 'data/type';
 import { Badge } from './infoRow/Badge';
+import { InfoRow } from './infoRow/InfoRow';
+import 'styles/table/payment/PayableSection.css';
 
 export function PayableSection({ payments }: { payments: payments[] }) {
   return (

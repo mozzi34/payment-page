@@ -1,4 +1,6 @@
-export const mockData = {
+import type { Payment } from 'data/type';
+
+export const mockData: Payment = {
   payments: [
     {
       id: 17,
@@ -215,7 +217,7 @@ export const mockData = {
       unitPrice: 0,
       amount: 0,
       itemId: 296,
-      paymentId: 17,
+      paymentId: 18,
     },
     {
       id: '24d15e26-cf27-457a-a7f3-eb757d1d1c0f',
@@ -224,16 +226,7 @@ export const mockData = {
       unitPrice: 20,
       amount: 0,
       itemId: 298,
-      paymentId: 17,
-    },
-    {
-      id: '10abf4dd-35d8-462c-9abb-97d2371769d7',
-      type: 'ITEM',
-      shippedQuantity: 2,
-      unitPrice: 0,
-      amount: 0,
-      itemId: 299,
-      paymentId: 17,
+      paymentId: 19,
     },
   ],
 };

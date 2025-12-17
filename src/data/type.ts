@@ -59,3 +59,16 @@ export type Payment = {
   consumptions: Consumption[];
   paymentBreakdowns: PaymentBreakdown[];
 };
+
+export type PaymentCell = PaymentBreakdown | null;
+
+export type ConsumptionRow = {
+  consumption: Consumption;
+  cells: PaymentCell[];
+};
+
+export type ConsumptionGroup = {
+  salesOrderId: number;
+  rows: ConsumptionRow[];
+  subTotalAmount: number;
+};

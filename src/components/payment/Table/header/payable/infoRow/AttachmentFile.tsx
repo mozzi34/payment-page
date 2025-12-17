@@ -1,4 +1,4 @@
-import 'styles/payment/AttachmentFile.css';
+import 'styles/table/payment/AttachmentFile.css';
 
 export function AttachmentFile({ files }: { files: string[] }) {
   return (
