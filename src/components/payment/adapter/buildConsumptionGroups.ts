@@ -1,22 +1,11 @@
-import type { Consumption, Payment, PaymentBreakdown } from 'data/type';
-
-export type PaymentCell = PaymentBreakdown | null;
-
-export type ConsumptionRow = {
-  consumption: Consumption;
-  cells: PaymentCell[];
-};
-
-export type ConsumptionGroup = {
-  salesOrderId: number;
-  rows: ConsumptionRow[];
-  subTotalAmount: number;
-};
-
-export type PaymentBundle = {
-  payment: Payment['payments'][number];
-  consumptionGroups: ConsumptionGroup[];
-};
+import type {
+  Consumption,
+  ConsumptionGroup,
+  ConsumptionRow,
+  Payment,
+  PaymentBreakdown,
+  PaymentCell,
+} from 'data/type';
 
 export type UnifiedTableData = {
   payments: Payment['payments'];

@@ -12,7 +12,6 @@ export function HeaderSection({
 }) {
   return (
     <div className="table-header">
-      {/* Ordered 헤더 */}
       <div className="table-ordered-section">
         <div className="table-section-header ordered-section-header">
           <h2>Ordered</h2>

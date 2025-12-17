@@ -66,27 +66,27 @@
   flex-direction: row;
   min-width: 1152px; /* 8 columns * 144px */
   flex-shrink: 0;
-  border-bottom: 1px solid var(--Gray-Scale-Cool-Gray-200, #e3e9ef);
+  border-bottom: 1px solid var(--Gray-Scale-Cool-Gray-200);
 }
 
 .unified-table-payment-section {
   display: flex;
   flex-direction: column;
-  border-left: 1px solid var(--Gray-Scale-Cool-Gray-200, #e3e9ef);
+  border-left: 1px solid var(--Gray-Scale-Cool-Gray-200);
   min-width: 500px;
 }
 
 .unified-table-payment-section-payment {
   display: flex;
   flex-direction: column;
-  border-left: 1px solid var(--Gray-Scale-Cool-Gray-200, #e3e9ef);
+  border-left: 1px solid var(--Gray-Scale-Cool-Gray-200);
   min-width: 424px;
 }
 
 .unified-table-payment-info {
   display: flex;
   flex-direction: column;
-  background-color: var(--Gray-Scale-Cool-Gray-100, #f5f7fa);
+  background-color: var(--Gray-Scale-Cool-Gray-100);
   padding: 8px;
   gap: 4px;
   width: 100%;
@@ -133,8 +133,8 @@
   display: flex;
   flex-direction: row;
   min-width: 288px; /* 2 columns * 144px */
-  border-left: 1px solid var(--Gray-Scale-Cool-Gray-200, #e3e9ef);
-  border-bottom: 1px solid var(--Gray-Scale-Cool-Gray-200, #e3e9ef);
+  border-left: 1px solid var(--Gray-Scale-Cool-Gray-200);
+  border-bottom: 1px solid var(--Gray-Scale-Cool-Gray-200);
 }
 
 .unified-table-body {
@@ -150,7 +150,7 @@
   align-items: center;
   min-height: 40px;
   width: 100%;
-  border-bottom: 1px solid var(--Gray-Scale-Cool-Gray-200, #e3e9ef);
+  border-bottom: 1px solid var(--Gray-Scale-Cool-Gray-200);
 }
 
 .unified-table-header-row {
@@ -160,7 +160,7 @@
 }
 
 .unified-table-subtotal-row {
-  background-color: var(--Gray-Scale-Cool-Gray-100, #f5f7fa);
+  background-color: var(--Gray-Scale-Cool-Gray-100);
   font-weight: 700;
   width: 100%;
 }

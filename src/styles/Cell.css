@@ -13,7 +13,7 @@
   justify-content: flex-start;
   min-height: 40px;
   text-align: start;
-  border: 1px solid var(--Gray-Scale-Cool-Gray-200, #e3e9ef);
+  border: 1px solid var(--Gray-Scale-Cool-Gray-200);
 }
 
 .dollar-cell {

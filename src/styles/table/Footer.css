@@ -4,7 +4,7 @@
   align-items: center;
   min-height: 40px;
   width: 100%;
-  border-bottom: 1px solid var(--Gray-Scale-Cool-Gray-200, #e3e9ef);
+  border-bottom: 1px solid var(--Gray-Scale-Cool-Gray-200);
 }
 
 .table-grandtotal-row {
@@ -18,7 +18,7 @@
   flex-direction: row;
   min-width: 1152px;
   flex-shrink: 0;
-  border-bottom: 1px solid var(--Gray-Scale-Cool-Gray-200, #e3e9ef);
+  border-bottom: 1px solid var(--Gray-Scale-Cool-Gray-200);
 }
 
 .table-footer-label {
@@ -38,8 +38,8 @@
   display: flex;
   flex-direction: row;
   min-width: 288px;
-  border-left: 1px solid var(--Gray-Scale-Cool-Gray-200, #e3e9ef);
-  border-bottom: 1px solid var(--Gray-Scale-Cool-Gray-200, #e3e9ef);
+  border-left: 1px solid var(--Gray-Scale-Cool-Gray-200);
+  border-bottom: 1px solid var(--Gray-Scale-Cool-Gray-200);
 }
 
 .text-right {
