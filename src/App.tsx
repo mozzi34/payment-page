@@ -1,15 +1,15 @@
-import { Button } from 'components/ui/Button';
+import { ConsumptionSection } from 'components/consumption/ConsumptionSection';
 import { PayableSection } from 'components/payment/PayableSection';
 import { mockData } from 'data/mock';
 import type { payments } from 'data/type';
+import 'styles/App.css';
 
 function App() {
-  const { payments } = mockData;
+  const { payments, consumptions } = mockData;
 
   return (
-    <main>
-      <h1>메인 페이지</h1>
-      <Button>버튼</Button>
+    <main className="app">
+      <ConsumptionSection consumptions={consumptions} />
       <PayableSection payments={payments as payments[]} />
     </main>
   );

@@ -12,7 +12,7 @@ export const mockData = {
       financeFiles: [],
     },
     {
-      id: 17,
+      id: 18,
       paymentStatus: 'NOT_YET',
       paymentDueDate: '2025-10-14T00:00:00.000Z',
       requestedAt: null,
@@ -23,8 +23,8 @@ export const mockData = {
       financeFiles: [],
     },
     {
-      id: 17,
-      paymentStatus: 'NOT_YET',
+      id: 19,
+      paymentStatus: 'PENDING',
       paymentDueDate: '2025-10-14T00:00:00.000Z',
       requestedAt: null,
       pendingAt: null,
@@ -105,7 +105,7 @@ export const mockData = {
       garmentColorName: 'Salmon',
       garmentSize: { id: 2, name: 'S', orderNum: 3 },
       salesOrder: {
-        id: 125,
+        id: 126,
         styleNumber: 'AIN26',
         styleCode: '010',
         createUser: {
@@ -132,7 +132,7 @@ export const mockData = {
       garmentColorName: 'Salmon',
       garmentSize: { id: 3, name: 'M', orderNum: 4 },
       salesOrder: {
-        id: 125,
+        id: 127,
         styleNumber: 'AIN26',
         styleCode: '010',
         createUser: {
@@ -159,7 +159,7 @@ export const mockData = {
       garmentColorName: 'Lemon',
       garmentSize: { id: 2, name: 'S', orderNum: 3 },
       salesOrder: {
-        id: 125,
+        id: 128,
         styleNumber: 'AIN26',
         styleCode: '010',
         createUser: {
@@ -186,7 +186,7 @@ export const mockData = {
       garmentColorName: 'Lemon',
       garmentSize: { id: 4, name: 'L', orderNum: 5 },
       salesOrder: {
-        id: 125,
+        id: 129,
         styleNumber: 'AIN26',
         styleCode: '010',
         createUser: {

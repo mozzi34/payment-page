@@ -1,0 +1,106 @@
+.ordered-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  flex: 1 1 0%;
+  flex-direction: column;
+  display: flex;
+}
+
+.ordered-table-header {
+  background-color: var(--Gray-Scale-Cool-Gray-150);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+}
+
+.ordered-table-header-item {
+  flex: 0 0 144px;
+}
+
+.ordered-table-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.ordered-table-body-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.ordered-table-body-item-item {
+  flex: 0 0 144px;
+}
+
+.consumption-section-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.consumption-section-items {
+  width: fit-content;
+}
+
+.ordered-table-body-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
+  border-top: 1px solid var(--Gray-Scale-Cool-Gray-200, #e3e9ef);
+  background-color: var(--Gray-Scale-Cool-Gray-150);
+}
+
+.ordered-table-footer-spacer {
+  flex: 0 0 144px;
+}
+
+.ordered-table-footer-label {
+  flex: 0 0 144px;
+  font-weight: 700;
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.ordered-table-footer-value {
+  flex: 0 0 144px;
+  font-weight: 700;
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.ordered-table-body-item-item-price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.ordered-table-header-item-unit {
+  flex: 0 0 56px;
+}
+
+.ordered-table-body-item-item-unit {
+  flex: 0 0 56px;
+}
+
+.ordered-table-body-subtotal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  border-top: 1px solid var(--Gray-Scale-Cool-Gray-200, #e3e9ef);
+  margin-top: 8px;
+  background-color: var(--Gray-Scale-Cool-Gray-150);
+}

@@ -1,5 +1,12 @@
 export type paymentStatus = 'NOT_YET' | 'PENDING' | 'PAID';
 
+export type CreateUser = {
+  id: number;
+  name: string;
+  engName: string;
+  profileImage: string;
+};
+
 export type payments = {
   id: number;
   paymentStatus: paymentStatus;
@@ -26,12 +33,7 @@ export type SalesOrder = {
   id: number;
   styleNumber: string;
   styleCode: string;
-  createUser: {
-    id: number;
-    name: string;
-    engName: string;
-    profileImage: string;
-  };
+  createUser: CreateUser;
 };
 
 export type Consumption = {
@@ -44,6 +46,11 @@ export type Consumption = {
   fabricDetail: string;
   supplierItemCode: string;
   brandItemCode: string | null;
+  colorName: string;
+  sopoNo: string;
+  unit: string;
+  garmentColorName: string;
+  garmentSize: { id: number; name: string; orderNum: number };
   salesOrder: SalesOrder;
 };
 
