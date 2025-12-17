@@ -8,7 +8,7 @@ export function TotalTableBody({ row }: { row: ConsumptionRow }) {
   const rowTotalAmount = row.cells.reduce((sum, cell) => sum + (cell?.amount ?? 0), 0);
 
   return (
-    <div className="unified-table-total-columns">
+    <div className="table-total-columns">
       <Cell className="text-right">{rowTotalQty === 0 ? '' : formatNumber(rowTotalQty)}</Cell>
       <DollarCell>{rowTotalAmount === 0 ? '' : formatCurrency(rowTotalAmount)}</DollarCell>
     </div>

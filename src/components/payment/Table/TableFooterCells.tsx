@@ -2,7 +2,7 @@ import type { ConsumptionGroup, payments } from 'data/type';
 import { GrandTotalOrdered } from './footer/GrandTotalOrdered';
 import { GrandTotalPayment } from './footer/GrandTotalPayment';
 import { GrandTotalTotal } from './footer/GrandTotalTotal';
-import 'styles/unifiedTable.css';
+import 'styles/table/Footer.css';
 
 export function TableFooterCells({
   consumptions,

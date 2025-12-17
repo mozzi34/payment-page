@@ -49,13 +49,13 @@
 }
 
 .button--variant-destructive {
-  background-color: var(--destructive, #ef4444);
+  background-color: var(--Destructive-Color-Red);
   color: var(--destructive-foreground, white);
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
 }
 
 .button--variant-destructive:hover {
-  background-color: color-mix(in srgb, var(--destructive, #ef4444) 90%, transparent);
+  background-color: color-mix(in srgb, var(--Destructive-Color-Red) 90%, transparent);
 }
 
 .button--variant-outline {
@@ -76,11 +76,11 @@
 }
 
 .button--variant-secondary:hover {
-  background-color: color-mix(in srgb, var(--secondary, #f3f4f6) 80%, transparent);
+  background-color: color-mix(in srgb, var(--Gray-Scale-Cool-Gray-100) 80%, transparent);
 }
 
 .button--variant-ghost:hover {
-  background-color: var(--accent, #f3f4f6);
+  background-color: var(--Gray-Scale-Cool-Gray-100);
   color: var(--accent-foreground, #111827);
 }
 

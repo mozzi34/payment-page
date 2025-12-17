@@ -10,7 +10,7 @@
 .table-grandtotal-row {
   background-color: var(--Gray-Scale-Cool-Gray-150);
   font-weight: 700;
-  border-top: 2px solid var(--Gray-Scale-Cool-Gray-300, #d1d5db);
+  border-top: 2px solid var(--Gray-Scale-Cool-Gray-300);
 }
 
 .table-ordered-columns {
