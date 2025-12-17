@@ -6,6 +6,7 @@
     "@types/node": "^16.7.13",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
+    "dayjs": "^1.11.19",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "react-scripts": "5.0.1",
