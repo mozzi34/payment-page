@@ -89,3 +89,93 @@ export function TableBodyCells({
 - 단점: CSS 모듈이나 CSS-in-JS를 사용하지 않아 클래스명 충돌 위험, 전역 스타일 관리 필요. 스타일 재사용 시 중복 가능성
 
 이 구조는 복잡한 결제 테이블을 관리하기 위해 데이터 변환과 컴포넌트 분리에 중점을 둔 설계입니다.
+
+
+## 요구사항 체크
+
+- [x] **1. Sub Total**
+    - [x] consumption을 salesOrder.id로 그룹핑 (`buildConsumptionGroups.ts` 42-57줄)
+    - [x] 각 그룹 하단에 Sub Total 행으로 orderAmount 합계 표시 (`SubTotal.tsx`, `TableBodyCells.tsx` 27줄)
+- [x] **2. 검색(Search)**
+    - [x] 임의의 Search 토글 버튼 구현 (`HeaderSection.tsx` 18줄 - "옵션 설정" 버튼)
+    - [x] Toggle ON 시 테이블 최상단에 "검색 행"(tr) 1줄 추가 (`TableHeaderCells.tsx` 28-108줄)
+    - [x] 기본값은 All이며, 각 컬럼의 후보는 해당 컬럼의 consumption 고유값 집합 (`Select.tsx`, `TableHeaderCells.tsx` 57-90줄)
+    - [x] 선택 시 해당 조건과 일치하는 consumption만 표시 (`buildConsumptionGroups.ts` 23-34줄 필터링 로직)
+    - [x] 다중 컬럼 동시 조건 AND (`buildConsumptionGroups.ts` 23-34줄 - 모든 조건이 true여야 통과)
+- [x] **3. Mock Data는 다양한 상황을 표현하도록 수정 가능하나 스키마는 유지** (`data/mock.ts` 존재, `data/type.ts` 스키마 정의)
+- [x] **4. CSS는 정확 일치 불필요. 피그마와 유사한 레이아웃과 상호작용 재현** (`styles/` 디렉토리에 CSS 파일들 존재)
+
+## 실행 방법
+
+### 사전 요구사항
+- Node.js (v16 이상 권장)
+- Yarn (또는 npm)
+
+### 설치
+```bash
+# 의존성 설치
+yarn install
+# 또는
+npm install
+```
+
+### 개발 서버 실행
+```bash
+# 개발 모드로 실행 (기본 포트: http://localhost:3000)
+yarn dev
+# 또는
+npm run dev
+```
+
+
+### 코드 품질 관리
+```bash
+# 린트 검사
+yarn lint
+
+# 린트 자동 수정
+yarn lint:fix
+
+# 코드 포맷팅
+yarn format
+
+# 전체 검사 (린트 + 포맷) - Biome 사용
+yarn run check
+# 또는
+yarn check:fix  # 자동 수정 포함
+
+# 주의: `yarn check`는 yarn의 의존성 검증 명령어입니다.
+# 프로젝트 스크립트를 실행하려면 `yarn run check`를 사용하세요.
+```
+
+### 의존성 문제 해결
+만약 `yarn check` 실행 시 의존성 충돌 에러가 발생한다면:
+```bash
+# node_modules와 yarn.lock 재생성
+rm -rf node_modules yarn.lock
+yarn install
+
+# 또는 의존성 검증만 실행 (프로젝트 스크립트 아님)
+yarn check  # yarn의 기본 의존성 검증 명령어
+```
+
+## 사용 방법
+
+### 주요 기능
+
+1. **테이블 필터링**
+   - 상단의 "옵션 설정" 버튼을 클릭하여 필터 모드 활성화
+   - Style No., Fabric Name, Fabric Color 컬럼에서 드롭다운으로 필터 선택
+   - 각 드롭다운에서 검색 기능 사용 가능 (입력 시 실시간 필터링)
+   - 여러 필터를 동시에 적용하면 AND 조건으로 필터링됨
+   - "All" 선택 시 해당 필터 해제
+
+2. **Sub Total 확인**
+   - 각 `salesOrder.id` 그룹 하단에 Sub Total 행이 자동으로 표시됨
+   - 해당 그룹의 `orderAmount` 합계가 표시됨
+
+3. **데이터 구조**
+   - Mock 데이터는 `src/data/mock.ts`에서 확인 및 수정 가능
+   - 타입 정의는 `src/data/type.ts`에서 확인 가능
+   - 스키마는 유지하면서 다양한 상황을 표현하도록 데이터 수정 가능
+
